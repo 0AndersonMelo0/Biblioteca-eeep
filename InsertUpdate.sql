@@ -14,7 +14,7 @@ VALUES
   ('3º C - Comércio', 'Comércio', 2022, 2024, 1),
   ('3º D - Administração', 'Administração', 2022, 2024, 1);
 -- --------------------------------------------------------------------------------------------------------------------
---- 1A 
+-- 1A 
 INSERT INTO aluno (numero, matricula, cpf, nome_completo, sala_identificacao, curso, serie)
 VALUES
   (1, 3528107, '120.459.613-11', 'Alana Kelly Ferreira de Araújo', '1º A - Enfermagem', 'Enfermagem', '1'),
