@@ -618,3 +618,33 @@ INSERT INTO livros (titulo_livro, autor, editora, ano_aquisicao, origem, local, 
   ('Sapiens: Uma Breve História da Humanidade', 'Yuval Noah Harari', 'Lemos', 2021, 'Compra', 'Porto Alegre', 'História', '909', '910', '0018', NULL),
   ('O Poder do Hábito', 'Charles Duhigg', 'Objetiva', 2020, 'Compra', 'Belo Horizonte', 'Autoajuda', '158', '150', '0019', NULL),
   ('Quem Mexeu no Meu Queijo?', 'Spencer Johnson', 'Editora Record', 2019, 'Doação', 'Rio de Janeiro', 'Autoajuda', '158', '150', '0020', NULL);
+
+
+
+
+
+
+-- ---------------------------------------
+INSERT INTO emprestimos (aluno_id, matricula, titulo_livro, numero_registro, curso, serie, data_emprestimo, nome_bibliotecario, status)
+VALUES
+  (1, 2821913, 'O Alquimista', '0001', 'Informática', '1', DATE_SUB(NOW(), INTERVAL FLOOR(RAND() * 30) DAY), 'João Silva', 'Em aberto'),
+  (2, 2863952, '1984', '0002', 'Informática', '1', DATE_SUB(NOW(), INTERVAL FLOOR(RAND() * 30) DAY), 'João Silva', 'Em aberto'),
+  (3, 2571214, 'Dom Casmurro', '0003', 'Informática', '1', DATE_SUB(NOW(), INTERVAL FLOOR(RAND() * 30) DAY), 'João Silva', 'Em aberto'),
+  (4, 2883001, 'A Revolução dos Bichos', '0004', 'Informática', '1', DATE_SUB(NOW(), INTERVAL FLOOR(RAND() * 30) DAY), 'João Silva', 'Em aberto'),
+  (5, 4190365, 'O Senhor dos Anéis', '0005', 'Informática', '1', DATE_SUB(NOW(), INTERVAL FLOOR(RAND() * 30) DAY), 'João Silva', 'Em aberto'),
+  (6, 2579938, 'O Hobbit', '0006', 'Informática', '1', DATE_SUB(NOW(), INTERVAL FLOOR(RAND() * 30) DAY), 'João Silva', 'Em aberto'),
+  (7, 2878115, 'A Arte da Guerra', '0007', 'Informática', '1', DATE_SUB(NOW(), INTERVAL FLOOR(RAND() * 30) DAY), 'João Silva', 'Em aberto'),
+  (8, 3414352, 'O Código Da Vinci', '0008', 'Informática', '1', DATE_SUB(NOW(), INTERVAL FLOOR(RAND() * 30) DAY), 'João Silva', 'Em aberto'),
+  (9, 3830205, 'A Culpa é das Estrelas', '0009', 'Informática', '1', DATE_SUB(NOW(), INTERVAL FLOOR(RAND() * 30) DAY), 'João Silva', 'Em aberto'),
+  (10, 5265887, 'Orgulho e Preconceito', '0010', 'Informática', '1', DATE_SUB(NOW(), INTERVAL FLOOR(RAND() * 30) DAY), 'João Silva', 'Em aberto'),
+  (11, 5265892, 'Moby Dick', '0011', 'Informática', '1', DATE_SUB(NOW(), INTERVAL FLOOR(RAND() * 30) DAY), 'João Silva', 'Em aberto'),
+  (12, 3512824, 'O Pequeno Príncipe', '0012', 'Informática', '1', DATE_SUB(NOW(), INTERVAL FLOOR(RAND() * 30) DAY), 'João Silva', 'Em aberto'),
+  (1, 3528107, 'Harry Potter e a Pedra Filosofal', '0013', 'Enfermagem', '1', DATE_SUB(NOW(), INTERVAL FLOOR(RAND() * 30) DAY), 'Maria Oliveira', 'Em aberto'),
+  (2, 1623693, 'O Diário de Anne Frank', '0014', 'Enfermagem', '1', DATE_SUB(NOW(), INTERVAL FLOOR(RAND() * 30) DAY), 'Maria Oliveira', 'Em aberto'),
+  (3, 3405847, 'O Lobo de Wall Street', '0015', 'Enfermagem', '1', DATE_SUB(NOW(), INTERVAL FLOOR(RAND() * 30) DAY), 'Maria Oliveira', 'Em aberto'),
+  (4, 2713276, 'O Sol é Para Todos', '0016', 'Enfermagem', '1', DATE_SUB(NOW(), INTERVAL FLOOR(RAND() * 30) DAY), 'Maria Oliveira', 'Em aberto'),
+  (5, 4224639, 'O Homem mais Rico da Babilônia', '0017', 'Enfermagem', '1', DATE_SUB(NOW(), INTERVAL FLOOR(RAND() * 30) DAY), 'Maria Oliveira', 'Em aberto'),
+  (6, 3540264, 'Sapiens: Uma Breve História da Humanidade', '0018', 'Enfermagem', '1', DATE_SUB(NOW(), INTERVAL FLOOR(RAND() * 30) DAY), 'Maria Oliveira', 'Em aberto'),
+  (1, 2972593, 'O Poder do Hábito', '0019', 'Comércio', '1', DATE_SUB(NOW(), INTERVAL FLOOR(RAND() * 30) DAY), 'Carlos Almeida', 'Em aberto'),
+  (2, 3516823, 'Quem Mexeu no Meu Queijo?', '0020', 'Comércio', '1', DATE_SUB(NOW(), INTERVAL FLOOR(RAND() * 30) DAY), 'Carlos Almeida', 'Em aberto');
+
