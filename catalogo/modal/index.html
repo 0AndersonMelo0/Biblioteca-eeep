@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <div class="modal-image">
+                <img src="http://books.google.com/books/content?id=EKgWEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api">
+            </div>
+            <div class="modal-form">
+                <div class="modal-header">
+                    <h2>Título do Modal</h2>
+                    <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+                </div>
+            <div class="inputs">
+                <div class="input-group">
+                    <input type="text" placeholder="Input 1">
+                    <input type="text" placeholder="Input 2">
+                </div>
+                <div class="input-group">
+                    <input type="text" placeholder="Input 3">
+                    <input type="text" placeholder="Input 4">
+                </div>
+                <div class="input-group">
+                    <input type="text" placeholder="Input 3">
+                    <input type="text" placeholder="Input 4">
+                </div>
+                <div class="input-group">
+                    <input type="text" placeholder="Input 3">
+                    <input type="text" placeholder="Input 4">
+                </div>
+                <div class="input-group">
+                    <input type="text" placeholder="Input 3">
+                    <input type="text" placeholder="Input 4">
+                </div>
+                <div class="input-group">
+                    <input type="text" placeholder="Input 3">
+                    <input type="text" placeholder="Input 4">
+                </div>
+                <div class="modal-footer">
+                    <button>Cancelar</button>
+                    <button>Confirmar</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <button onclick="document.getElementById('myModal').style.display='flex'">Abrir Modal</button>
+</body>
+</html>
